@@ -37,7 +37,7 @@ int main() {
         }
     }
 
-    int distance = city[1][k] + city[k][x];
+    int distance = city[1][x] + city[x][k];
     if (distance >= INFINITE) {
         printf("-1\n");
     }
@@ -45,4 +45,5 @@ int main() {
         printf("%d\n", distance);
     }
     return 0;
+
 }
